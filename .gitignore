@@ -1,0 +1,32 @@
+# Fichiers d'environnement (à ne pas versionner, contiennent des infos sensibles)
+.env
+.env.local
+.env.*.local
+
+# Ignorer les fichiers générés par Symfony
+/symfony.lock
+
+# Dossier de configuration de l'IDE JetBrains
+.idea/
+
+# Dossier des exécutables de Symfony
+/bin/
+
+# Dossier des dépendances PHP
+/vendor/
+
+# Dossier des fichiers temporaires ou générés par Symfony
+/var/
+
+# Dossier des assets compilés par Webpack
+/public/bundles/
+
+# Dossier des dépendances JavaScript (npm ou yarn)
+node_modules/
+
+# Fichiers générés par npm/yarn
+npm-debug.log
+yarn-error.log
+
+
+
