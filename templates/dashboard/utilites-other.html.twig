@@ -31,7 +31,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard/dashboard.html.twig">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ path('app_admin')}}">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
@@ -43,7 +43,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="dashboard/dashboard.html.twig">
+            <a class="nav-link" href="{{ path('app_admin')}}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
@@ -66,8 +66,8 @@
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Custom Components:</h6>
-                    <a class="collapse-item" href="dashboard/buttons.html.twig">Buttons</a>
-                    <a class="collapse-item" href="dashboard/cards.html.twig">Cards</a>
+                    <a class="collapse-item" href="{{ path('app_button')}}">Buttons</a>
+                    <a class="collapse-item" href="{{ path('app_cards')}}">Cards</a>
                 </div>
             </div>
         </li>
@@ -83,10 +83,10 @@
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Custom Utilities:</h6>
-                    <a class="collapse-item" href="dashboard/utilites-color.html.twig">Colors</a>
-                    <a class="collapse-item" href="dashboard/utilites-border.html.twig">Borders</a>
-                    <a class="collapse-item" href="dashboard/utilities-animation.html.twig">Animations</a>
-                    <a class="collapse-item" href="dashboard/utilites-other.html.twig">Other</a>
+                    <a class="collapse-item" href="{{ path('app_utilcolor') }}">Colors</a>
+                    <a class="collapse-item" href="{{ path('app_utilborder') }}">Borders</a>
+                    <a class="collapse-item" href="{{ path('app_utilcolor') }}">Animations</a>
+                    <a class="collapse-item" href="{{ path('app_utilborder') }}">Other</a>
                 </div>
             </div>
         </li>
@@ -109,27 +109,27 @@
             <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Login Screens:</h6>
-                    <a class="collapse-item" href="dashboard/login.html.twig">Login</a>
-                    <a class="collapse-item" href="dashboard/register.html.twig">Register</a>
-                    <a class="collapse-item" href="dashboard/forgot-password.html.twig">Forgot Password</a>
+                    <a class="collapse-item" href="{{ path('app_login') }}">Login</a>
+                    <a class="collapse-item" href="{{ path('app_register') }}">Register</a>
+                    <a class="collapse-item" href="{{ path('app_forgot') }}">Forgot Password</a>
                     <div class="collapse-divider"></div>
                     <h6 class="collapse-header">Other Pages:</h6>
-                    <a class="collapse-item" href="dashboard/404.html.twig">404 Page</a>
-                    <a class="collapse-item" href="dashboard/blank.html.twig">Blank Page</a>
+                    <a class="collapse-item" href="{{ path('app_404') }}">404 Page</a>
+                    <a class="collapse-item" href="{{ path('app_blank') }}">Blank Page</a>
                 </div>
             </div>
         </li>
 
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" href="dashboard/charts.html.twig">
+            <a class="nav-link" href="{{ path('app_charts')}}">
                 <i class="fas fa-fw fa-chart-area"></i>
                 <span>Charts</span></a>
         </li>
 
         <!-- Nav Item - Tables -->
         <li class="nav-item">
-            <a class="nav-link" href="dashboard/table.html.twig">
+            <a class="nav-link" href="{{ path('app_table')}}">
                 <i class="fas fa-fw fa-table"></i>
                 <span>Tables</span></a>
         </li>
@@ -485,7 +485,7 @@
             <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="dashboard/login.html.twig">Logout</a>
+                <a class="btn btn-primary" href="{{ path('app_login')}}">Logout</a>
             </div>
         </div>
     </div>
