@@ -61,7 +61,7 @@ class PageController extends AbstractController
         return $this->render('dashboard/blank.html.twig');
     }
 
-    #[Route('/buttons', name: 'app_buttons')]
+    #[Route('/buttons', name: 'app_button')]
     public function buttons(): Response
     {
         return $this->render('dashboard/buttons.html.twig');
